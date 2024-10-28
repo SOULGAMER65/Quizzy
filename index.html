@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <title>Quizzy</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sl.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     
 </head>
 <body>
@@ -13,7 +15,7 @@
     <div class="backgrd">
         
         <header>
-        <div class="Qzy">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#qz" id="qz">Quizzy</a></div>
+        <div class="Qzy"><a href="#qz" id="qz">Quizzy</a></div>
         
         <div>
             <nav>
@@ -55,9 +57,9 @@
         <div class="scr">
             <button class="score" id="score">Score:</button>
         </div>
-        <div>
-            <section class="shr">
-            <img id="shr" width="50px" height="40px" src="shr.png">
+        <div >
+            <section class="shr" onclick="shareFunction()">
+            <img id="shr" width="50px" height="40px"  src="shr.png">
             </section>
         </div>
         <div>
@@ -67,7 +69,7 @@
 
             <section class="lb" id="lb">
                 <section class="cntent">
-                   <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LeaderBoard 🏆</h4>
+                   <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LeaderBoard</h4>
                    <ul>
                        <li>1.FirstPerson</li><br>
                        <li>2.SecondPerson</li><br>
@@ -80,5 +82,6 @@
     </div>
     <script src="script.js"></script>
     <script src="lbscript.js"></script>
+    <script src="shrscript.js"></script>
 </body>
 </html>
